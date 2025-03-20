@@ -1,7 +1,8 @@
 name: graphs
 channels:
   - conda-forge
-  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
 dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_gnu
@@ -247,6 +248,7 @@ dependencies:
   - pexpect=4.9.0=pyhd8ed1ab_1
   - pickleshare=0.7.5=pyhd8ed1ab_1004
   - pillow=11.1.0=py313h8db990d_0
+  - pip=25.0.1=pyh145f28c_0
   - pixman=0.44.2=h29eaf8c_0
   - pkgutil-resolve-name=1.3.10=pyhd8ed1ab_2
   - platformdirs=4.3.6=pyhd8ed1ab_1
@@ -358,6 +360,8 @@ dependencies:
       - fsspec==2025.3.0
       - humanize==4.12.1
       - jax==0.5.3
+      - jax-cuda12-pjrt==0.5.3
+      - jax-cuda12-plugin==0.5.3
       - jaxlib==0.5.3
       - jmp==0.0.4
       - jraph==0.0.6.dev0
@@ -365,11 +369,20 @@ dependencies:
       - mdurl==0.1.2
       - ml-dtypes==0.5.1
       - msgpack==1.1.0
+      - nvidia-cublas-cu12==12.8.4.1
+      - nvidia-cuda-cupti-cu12==12.8.90
+      - nvidia-cuda-nvcc-cu12==12.8.93
+      - nvidia-cuda-runtime-cu12==12.8.90
+      - nvidia-cudnn-cu12==9.8.0.87
+      - nvidia-cufft-cu12==11.3.3.83
+      - nvidia-cusolver-cu12==11.7.3.90
+      - nvidia-cusparse-cu12==12.5.8.93
+      - nvidia-nccl-cu12==2.26.2
+      - nvidia-nvjitlink-cu12==12.8.93
       - opencv-contrib-python==4.11.0.86
       - opt-einsum==3.4.0
       - optax==0.2.4
       - orbax-checkpoint==0.11.10
-      - pip==25.0.1
       - protobuf==6.30.1
       - rich==13.9.4
       - simplejson==3.20.1
@@ -377,4 +390,4 @@ dependencies:
       - tensorstore==0.1.72
       - toolz==1.0.0
       - treescope==0.1.9
-prefix: /home/benjamin/anaconda3/envs/graphs
+prefix: /home/benjamin.deporte/.conda/envs/graphs
